@@ -32,4 +32,16 @@ As a host
 so that I can make the most of MakersBnB
 I would like to have the option to list more than one space
 
+As a host
+So that I can recognise my property
+I want to give a name to my property
+
+As a host
+So that my property read nice and beautiful
+I want to provide a short description of my property
+
+As a host
+So that I can make more money
+I want to set a price per night
+
 ```
