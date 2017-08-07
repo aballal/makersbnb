@@ -21,4 +21,8 @@ As a host
 So that I can get guests to rent my space
 I would like to offer a range of available dates
 
+As a host
+so that I can make the most of MakersBnB
+I would like to have the option to list more than one space
+
 ```
