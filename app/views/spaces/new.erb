@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>List a space</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section>
+      <h1> List a Space </h1>
+      <h3> Start by creating your listing.
+        It’s like a profile page for your place.</h3>
+    </section>
+  </br>
+
+  <form action="/spaces" method="POST">
+  </br>
+  <label for='name'>
+    Name
+  </br>
+     <input name='name' type='text'>
+  </label>
+</br>
+</br>
+  <label for='description'>
+    Description
+  </br>
+    <input name='description' type='text'>
+  </label>
+</br>
+</br>
+  <label for='Price per night'>
+    Price per night (£)
+  </br>
+    <input name='price_per_night' type='text' value='£'>
+  </label>
+</br>
+</br>
+  <label for='available_from'>
+    Available from (DD/MM/YY)
+  </br>
+    <input name='available_from' type='text' value=''>
+  </label>
+</br>
+</br>
+  <label for='available_to'>
+    Available to (DD/MM/YY)
+  </br>
+    <input name='available_to' type='text' value=''>
+  </label>
+</br>
+</br>
+  <input type="submit" value="List my Space">
+</form>
+
+</body>
+</html>
