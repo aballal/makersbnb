@@ -43,4 +43,5 @@ I want to provide a short description of my property
 As a host
 So that I can make more money
 I want to set a price per night
+
 ```
