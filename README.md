@@ -7,6 +7,10 @@ Headline specifications
 
 * Any signed-up user can list a new space.
 * Users can list multiple spaces.
+As a host
+so that I can make the most of MakersBnB
+I would like to have the option to list more than one space
+
 * Users should be able to name their space, provide a short description of the space, and a price per night.
 * Users should be able to offer a range of dates where their space is available.
 
