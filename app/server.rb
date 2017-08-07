@@ -1,6 +1,6 @@
 # Server
 class MakersBnB < Sinatra::Base
   get '/' do
-    'Makers BnB'
+    redirect 'spaces/new'
   end
 end
