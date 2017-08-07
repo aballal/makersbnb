@@ -16,6 +16,13 @@ User Stories
 ---
 
 ```
+As a host
+So that I can use the Makersbnb app
+I want to sign up for new account
+
+As a host
+So that I can rent my space
+I wish to list a new space
 
 As a host
 So that I can get guests to rent my space
