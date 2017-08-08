@@ -3,9 +3,8 @@ feature 'Listing a space' do
     visit('spaces/new')
     expect(page.status_code).to eq 200
     expect(page).to have_content('List a Space')
-    list_space
+    expect { list_space }.to change(Space, :count).by(1)
     expect(current_path).to eq '/spaces'
-    # check database content
     # check page content
   end
 end

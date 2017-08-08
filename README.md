@@ -15,53 +15,76 @@ Headline specifications
 User Stories
 ---
 
+Minimum Viable Product
+
+1.
 ```
+As a host
+So that I can rent my space
+I wish to list a new space
+```
+2.
+```
+As a host
+So that I can introduce my property to potential guests
+I want to give a name to my property
+```
+3.
+```
+As a host
+So that I can give a summary about my property to the guests
+I want to provide a short description of my property
+```
+4.
+```
+As a host
+So that I can make money from renting my property
+I want to set a price per night
+```
+5.
+```
+As a host
+So that I can get guests to rent my space
+I would like to offer a range of available dates
+```
+6.
+```
+As a guest
+So that I can hire a space for a night
+I can request the host to make a booking
+```
+7.
+```
+As a host
+So that I can allow a guest to stay a night
+I can approve the booking request
+```
+8.
+```
+As a guest
+So that I can avoid losing my approved space
+I can confirm my booking
+```
+9.
+```
+As a host
+So that I don't allow my space to be double booked
+I mark the space as unavailable when booking request is confirmed
+```
+
+Extras
+
+```
+
 As a user
 So that I can use the MakersBnB app
 I want to sign up for new account
 
 As a host
-So that I can rent my space
-I wish to list a new space
-
-As a host
 So that I can make the most of MakersBnB
 I would like to have the option to list more than one space
-
-As a host
-So that I can introduce my property to potential guests
-I want to give a name to my property
-
-As a host
-So that I can give a summary about my property to the guests
-I want to provide a short description of my property
-
-As a host
-So that I can make money from renting my property
-I want to set a price per night
-
-As a host
-So that I can get guests to rent my space
-I would like to offer a range of available dates
-
-As a guest
-So that I can hire a space for a night
-I can request the host to make a booking
-
-As a host
-So that I can allow a guest to stay a night
-I can approve the booking request
 
 As a guest
 So that I don't request a space that has already been booked
 I can see if a space is available or booked
-
-As a guest
-So that I can avoid losing my approved space
-I can confirm my booking
-
-As a host
-So that I don't allow my space to be double booked
-I mark the space as unavailable when booking request is confirmed
-
 ```
