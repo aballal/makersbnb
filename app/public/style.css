@@ -28,28 +28,6 @@ input {
   text-align: center;
   padding-bottom: 20px;
 }
-.spaces {
-  margin: auto;
-  width: 80%;
-  border: 2px solid;
-  padding: 20px;
-  box-shadow: 10px 10px 5px #888888;
-}
-.space {
-  margin: auto;
-  width: 90%;
-  border: 2px solid;
-  padding: 10px;
-  box-shadow: 10px 10px 5px #888888;
-}
-.list-space {
-  margin: auto;
-  width: 60%;
-  border: 2px solid;
-  padding: 20px;
-  box-shadow: 10px 10px 5px #888888;
-  text-align: center;
-}
 .fixed-width-label {
   display:inline-block;
   margin-bottom: 10px;

@@ -1,0 +1,8 @@
+.list-space {
+  margin: auto;
+  width: 60%;
+  border: 2px solid;
+  padding: 20px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align: center;
+}
