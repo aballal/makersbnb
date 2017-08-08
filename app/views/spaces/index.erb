@@ -6,16 +6,12 @@
     <title>Spaces</title>
   </head>
   <body>
+    <section class='message'>
+      Book unique homes and experience a city like a local
+    </section>
     <section class='page-heading'>
       <h2> Book a Space </h2>
     </section>
-
-    <section>
-      <form class='centered-button' action='/spaces/new' method='GET'>
-        <input type='submit' value='List a Space'/>
-      </form>
-    </section>
-
     <section>
       <ul class='spaces'>
         <% @spaces.each do |space| %>
@@ -23,7 +19,7 @@
             <label><%= space.name %></label></br>
             <label><%= space.description %></label><br/>
             <label>
-              Price per Night: £ <%= '%.2f' % space.price_per_night %> |
+              Price per Night: £<%= '%.2f' % space.price_per_night %> |
               Available From: <%= space.available_from %> |
               Available To: <%= space.available_to %>
             </label>

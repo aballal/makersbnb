@@ -3,38 +3,38 @@
   <head>
     <meta charset='utf-8'>
     <link href='/style.css' rel='stylesheet' type='text/css'>
-    <title>List a space</title>
+    <title>List a Space</title>
   </head>
   <body>
-    <section>
-      <h1> List a Space </h1>
-      <h3> Start by creating your listing.
-        It’s like a profile page for your place.</h3>
+    <section class='message'>
+      Start by creating your listing. It’s like a profile page for your place.
     </section>
-
-    <section>
+    <section class='page-heading'>
+      <h2> List a Space </h2>
+    </section>
+    <section class='list-space'>
       <form action='/spaces/new' method='POST'>
-        <label for='name'>Name</label><br/>
+        <label class='fixed-width-label' for='name'>Name</label>
         <input name='name' type='text'></br>
         </br>
 
-        <label for='description'>Description</label></br>
+        <label class='fixed-width-label' for='description'>Description</label>
         <input name='description' type='text'></br>
         </br>
 
-        <label for='Price per night'>Price per night</label></br>
+        <label class='fixed-width-label' for='Price per night'>Price per night</label>
         <input name='price_per_night' type='text' placeholder='£'></br>
         </br>
 
-        <label for='available_from'>Available from</label></br>
+        <label class='fixed-width-label' for='available_from'>Available from</label>
         <input name='available_from' type='text' placeholder='DD/MM/YYYY'></br>
         </br>
 
-        <label for='available_to'>Available to</label></br>
+        <label class='fixed-width-label' for='available_to'>Available to</label>
         <input name='available_to' type='text' placeholder='DD/MM/YYYY'></br>
         </br>
 
-        <input type='submit' value='List my Space'>
+        <input class='buttons' type='submit' value='List my Space'>
       </form>
     </section>
   </body>
