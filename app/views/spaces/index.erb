@@ -21,11 +21,11 @@
         <ul id='spaces'>
         <% @spaces.each do |space| %>
         <li>
-          Name <% space.name %></br>
-          Description <% space.description %><br/>
-          Price per night <% space.price_per_night %></br>
-          Available from <% space.available_from %></br>
-          Available to <% space.available_to %></br>
+          Name <%= space.name %></br>
+          Description <%= space.description %><br/>
+          Price per night <%= space.price_per_night %></br>
+          Available from <%= space.available_from %></br>
+          Available to <%= space.available_to %></br>
         </li>
         <% end %>
       </ul>
