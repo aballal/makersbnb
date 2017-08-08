@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>List a space</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href='/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <section>
@@ -11,47 +11,31 @@
       <h3> Start by creating your listing.
         It’s like a profile page for your place.</h3>
     </section>
-  </br>
 
-  <form action="/spaces" method="POST">
-  </br>
-  <label for='name'>
-    Name
-  </br>
-     <input name='name' type='text'>
-  </label>
-</br>
-</br>
-  <label for='description'>
-    Description
-  </br>
-    <input name='description' type='text'>
-  </label>
-</br>
-</br>
-  <label for='Price per night'>
-    Price per night (£)
-  </br>
-    <input name='price_per_night' type='text' value='£'>
-  </label>
-</br>
-</br>
-  <label for='available_from'>
-    Available from (DD/MM/YYYY)
-  </br>
-    <input name='available_from' type='text' value=''>
-  </label>
-</br>
-</br>
-  <label for='available_to'>
-    Available to (DD/MM/YYYY)
-  </br>
-    <input name='available_to' type='text' value=''>
-  </label>
-</br>
-</br>
-  <input type="submit" value="List my Space">
-</form>
+    <section>
+      <form action='/spaces' method='POST'>
+        <label for='name'>Name</label><br/>
+        <input name='name' type='text'></br>
+        </br>
 
-</body>
+        <label for='description'>Description</label></br>
+        <input name='description' type='text'></br>
+        </br>
+
+        <label for='Price per night'>Price per night</label></br>
+        <input name='price_per_night' type='text' placeholder='£'></br>
+        </br>
+
+        <label for='available_from'>Available from</label></br>
+        <input name='available_from' type='text' placeholder='DD/MM/YYYY'></br>
+        </br>
+
+        <label for='available_to'>Available to</label></br>
+        <input name='available_to' type='text' placeholder='DD/MM/YYYY'></br>
+        </br>
+
+        <input type='submit' value='List my Space'>
+      </form>
+    </section>
+  </body>
 </html>
