@@ -20,9 +20,12 @@
             <label><%= space.description %></label><br/>
             <label>
               Price per Night: £<%= '%.2f' % space.price_per_night %> |
-              Available From: <%= space.available_from %> |
-              Available To: <%= space.available_to %>
+              Available From: <%= Date.parse(space.available_from.to_s).strftime('%d-%b-%Y') %> |
+              Available To: <%= Date.parse(space.available_to.to_s).strftime('%d-%b-%Y') %>
             </label>
+            <!-- Figure out how to add the form tags without messing up the layout -->
+            <input class='buttons' type='submit' value='Book'/>
+            </form>
           </p>
         <% end %>
       </ul>
