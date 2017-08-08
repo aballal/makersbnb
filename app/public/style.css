@@ -3,6 +3,36 @@ body {
 }
 label {
   display:inline-block;
-  width:300px;
   margin-bottom: 10px;
+}
+.site-heading {
+  text-align: center;
+  color: #FD5C63;
+  font-size: 200%
+}
+.message {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+.page-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.centered-button {
+  text-align: center;
+  height: 30px;
+  color: #FFF;
+}
+.spaces {
+  margin: auto;
+  width: 80%;
+  border: 2px solid;
+  padding: 20px;
+}
+.space {
+  margin: auto;
+  width: 90%;
+  border: 2px solid;
+  padding: 10px;
 }
