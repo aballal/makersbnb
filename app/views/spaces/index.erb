@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Spaces</title>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <section>
+      <h1> Book a Space </h1>
+      <h3> Enter dates to see full pricing. Additional fees apply.
+        Taxes may be added after login.</h3>
+      </section>
+
+      <section>
+        <form action='/spaces/new' method='GET'>
+          <input type='submit' value='List a space'>
+        </section>
+
+      <section>
+        <ul id='spaces'>
+        <% @spaces.each do |space| %>
+        <li>
+          Name <% space.name %></br>
+          Description <% space.description %><br/>
+          Price per night <% space.price_per_night %></br>
+          Available from <% space.available_from %></br>
+          Available to <% space.available_to %></br>
+        </li>
+        <% end %>
+      </ul>
+    </section>
+  </body>
+</html>
