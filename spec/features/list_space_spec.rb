@@ -1,5 +1,6 @@
 feature 'Listing a space' do
   before do
+    sign_up
     navigate_to_list_a_space
   end
 
