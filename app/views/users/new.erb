@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='/users_new.css' rel='stylesheet' type='text/css'>
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <section class='message'>
+    </section>
+    <section class='page-heading'>
+      <h2> Sign up to MakersBnB </h2>
+    </section>
+    <section class='sign-up'>
+      <form action='/users/new' method='POST'>
+        <label class='fixed-width-label' for='email_address'>Email Address</label>
+        <input name='email_address' type='email' required><br/>
+        <br/>
+
+        <label class='fixed-width-label' for='password'>Password</label>
+        <input name='password' type='password' required><br/>
+        <br/>
+
+        <label class='fixed-width-label' for='password_confirmation'>Password confirmation</label>
+        <input name='password_confirmation' type='password' required><br/>
+        <br/>
+
+        <input class='buttons' type='submit' value='Sign up'>
+      </form>
+    </section>
+
+  </body>
+</html>
