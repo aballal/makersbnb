@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='/bookings_new.css' rel='stylesheet' type='text/css'>
+    <title>Place your booking</title>
+  </head>
+  <body>
+    <section class='message'>
+      <%= @space.name %></h2> -
+      <%= @space.description %>
+    </section>
+    <section class='page-heading'>
+      <h2> Book a Night </h2>
+    </section>
+    <section class='book-space'>
+      <div id='calendar'>
+      </div>
+      <form action='/bookings' method='POST'>
+        <input id='selected-date' name='selected-date' type='text' value='' disabled><br/>
+        <br/>
+        <input class='buttons' type='submit' value='Request to Book'/>
+      </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $('#calendar').datepicker({
+          dateFormat: "dd-mm-yy",
+          inline: true,
+          firstDay: 1,
+          showOtherMonths: true,
+          dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        });
+
+      $(function(){
+        $('#calendar').on('change', function(){
+          var selected_date = $(this).val();
+          $('#selected-date').val(selected_date);
+        });
+      });
+    </script>
+  </body>
+</html>
