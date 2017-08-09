@@ -2,6 +2,6 @@
 class MakersBnB < Sinatra::Base
 
   get '/bookings' do
-    p 'Under construction'
+    erb :'bookings/new'
   end
 end
