@@ -2,31 +2,31 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <link href='/spaces_index.css' rel='stylesheet' type='text/css'>
     <title>Spaces</title>
-    <link href='/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <section class='message'>
+      Book unique homes and experience a city like a local
+    </section>
+    <section class='page-heading'>
+      <h2> Book a Space </h2>
+    </section>
     <section>
-      <h1> Book a Space </h1>
-      <h3> Enter dates to see full pricing. Additional fees apply.
-        Taxes may be added after login.</h3>
-      </section>
-
-      <section>
-        <form action='/spaces/new' method='GET'>
-          <input type='submit' value='List a space'>
-        </section>
-
-      <section>
-        <ul id='spaces'>
+      <ul class='spaces'>
         <% @spaces.each do |space| %>
-        <li>
-          Name <% space.name %></br>
-          Description <% space.description %><br/>
-          Price per night <% space.price_per_night %></br>
-          Available from <% space.available_from %></br>
-          Available to <% space.available_to %></br>
-        </li>
+          <p class='space'>
+            <label><%= space.name %></label></br>
+            <label><%= space.description %></label><br/>
+            <label>
+              Price per Night: £<%= '%.2f' % space.price_per_night %> |
+              Available From: <%= Date.parse(space.available_from.to_s).strftime('%d-%b-%Y') %> |
+              Available To: <%= Date.parse(space.available_to.to_s).strftime('%d-%b-%Y') %>
+            </label>
+            <!-- Figure out how to add the form tags without messing up the layout -->
+            <input class='buttons' type='submit' value='Book'/>
+            </form>
+          </p>
         <% end %>
       </ul>
     </section>

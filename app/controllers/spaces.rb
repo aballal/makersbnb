@@ -3,7 +3,7 @@ class MakersBnB < Sinatra::Base
 
   get '/spaces' do
     @spaces = Space.all
-    # erb :'spaces/index' # This forms should get back to post /spaces route
+    erb :'spaces/index'
   end
 
   post '/spaces' do

@@ -4,6 +4,6 @@ class MakersBnB < Sinatra::Base
   set :session_secret, 'super secret'
 
   get '/' do
-    redirect 'spaces/new'
+    redirect '/spaces'
   end
 end

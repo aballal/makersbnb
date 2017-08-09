@@ -1,8 +1,37 @@
 body {
-
+  font-family: Helvetica,Arial,sans-serif;
 }
 label {
   display:inline-block;
-  width:300px;
   margin-bottom: 10px;
+}
+input {
+  font-size: 100%;
+  width: 250px;
+  height: 30px;
+}
+.top-right-links {
+  float: right;
+}
+.site-heading {
+  text-align: center;
+  text-shadow: 2px 4px black;
+  color: #FD5C63;
+  font-size: 200%
+}
+.message {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+.page-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.fixed-width-label {
+  display:inline-block;
+  margin-bottom: 10px;
+  width: 200px;
+  text-align: left;
+  padding-right: 20px;
 }
