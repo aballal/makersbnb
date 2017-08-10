@@ -13,6 +13,6 @@ class MakersBnB < Sinatra::Base
     booking = Booking.create(night: params[:night], status: 'Requested',
                             user_id: current_user.id,
                             space_id: current_space.id)
-    redirect '/spaces'
+    redirect '/requests'
   end
 end

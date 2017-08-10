@@ -15,5 +15,7 @@ feature 'Booking request' do
     expect(booking.status).to eq 'Requested'
     expect(booking.user_id).to eq User.first(email_address: 'john@example.com').id
     expect(booking.space.name).to eq "Maya's Inn"
+    expect(current_path).to eq '/requests'
+    expect(page.status_code).to eq 200
   end
 end
