@@ -7,9 +7,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/spaces' do
-    # Uncomment the code below when there is a working form in spaces/index.erb
-    # When Book is clicked the form needs to return space_id in params
-    # session[:space_id] = params[:space_id]
+    session[:space_id] = params[:space_id]
     redirect '/bookings'
   end
 
