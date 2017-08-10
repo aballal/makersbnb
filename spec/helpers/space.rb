@@ -1,6 +1,7 @@
 module SpaceHelpers
   def navigate_to_list_a_space
     visit('/')
+    sign_up
     click_on 'List a Space'
   end
 

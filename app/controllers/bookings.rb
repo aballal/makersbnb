@@ -2,7 +2,9 @@
 class MakersBnB < Sinatra::Base
 
   get '/bookings' do
-    @space = Space.first # For testing only. This needs to be changed to the selected space.
+    @space = Space.first # For testing only
+    # Remove the line above and uncomment the line below when current_space is uncommented
+    # @space = current_space
     erb :'bookings/new'
   end
 
