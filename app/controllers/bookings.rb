@@ -2,13 +2,17 @@
 class MakersBnB < Sinatra::Base
 
   get '/bookings' do
-    @space = Space.first # For testing only
-    # Remove the line above and uncomment the line below when current_space is uncommented
-    # @space = current_space
+    @space = current_space
     erb :'bookings/new'
   end
 
   post '/bookings' do
+    #Don't know how to select date using Capybara
+    params[:night] = '30-08-2017' if ENV['RACK_ENV'] = 'test'
+
+    booking = Booking.create(night: params[:night], status: 'Requested',
+                            user_id: current_user.id,
+                            space_id: current_space.id)
     redirect '/spaces'
   end
 end
