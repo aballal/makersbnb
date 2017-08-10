@@ -4,4 +4,8 @@ module BookingHelper
     list_space
     visit('/bookings') #Replace this with click_on 'Book' once the button works
   end
+
+  def request_to_book
+    click_on 'Request to Book'
+  end
 end
