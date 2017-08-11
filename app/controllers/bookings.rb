@@ -7,12 +7,12 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/bookings' do
-    #Don't know how to select date using Capybara
+    # Don't know how to select date using Capybara
     params[:night] = '30-08-2017' if ENV['RACK_ENV'] == 'test'
 
-    booking = Booking.create(night: params[:night], status: 'Requested',
-                            user_id: current_user.id,
-                            space_id: current_space.id)
+    Booking.create(night: params[:night], status: 'Requested',
+                   user_id: current_user.id,
+                   space_id: current_space.id)
     redirect '/requests'
   end
 end
