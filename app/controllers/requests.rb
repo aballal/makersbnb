@@ -6,4 +6,13 @@ class MakersBnB < Sinatra::Base
     @requests_received = spaces.map { |space| p Booking.all(:space_id => space.id) }
     erb :'requests/index'
   end
+
+  get '/requests/made' do
+    erb :'requests/made'
+  end
+
+  get '/requests/received' do
+    erb :'requests/received'
+  end
+
 end
