@@ -17,5 +17,7 @@ feature 'Booking request' do
     expect(booking.space.name).to eq "Maya's Inn"
     expect(current_path).to eq '/requests'
     expect(page.status_code).to eq 200
+    expect(page).to have_content 'Requests'
+    save_and_open_page
   end
 end

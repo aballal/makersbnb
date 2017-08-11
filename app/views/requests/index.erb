@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Spaces</title>
+  </head>
+  <body>
+    <section class='message'>
+      All your requests in one place
+    </section>
+    <section class='page-heading'>
+      <h2> Requests </h2>
+    </section>
+    <section>
+      Requests Made <br>
+      <% @requests_made.each do |request_made| %>
+        <%= request_made.space.name%></br>
+        <%= request_made.status%></br>
+        <%= Date.parse(request_made.night.to_s).strftime('%d-%b-%Y')%></br>
+      <% end %>
+    </section>
+    <section>
+      
+    </section>
+  </body>
+</html>
