@@ -11,11 +11,11 @@ class MakersBnB < Sinatra::Base
     erb :'requests/index'
   end
 
-  get '/requests/made' do
+  post '/requests/made' do
     erb :'requests/made'
   end
 
-  get '/requests/received' do
+  post '/requests/received' do
     erb :'requests/received'
   end
 

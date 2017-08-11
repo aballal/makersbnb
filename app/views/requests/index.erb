@@ -12,22 +12,35 @@
     <section class='page-heading'>
       <h2> Requests </h2>
     </section>
-    <section id='requests-made'>
+    <section class='requests' id='requests-made'>
       Requests I've Made <br>
       <% @requests_made.each do |request_made| %>
-        <%= request_made.space.name%></br>
-        <%= request_made.status%></br>
-        <%= Date.parse(request_made.night.to_s).strftime('%d-%b-%Y')%></br>
-        <br>
+        <p class='request'>
+          <%= request_made.space.name%></br>
+          <%= request_made.status%></br>
+          <%= Date.parse(request_made.night.to_s).strftime('%d-%b-%Y')%></br>
+          <form action='/requests/made' method='post'>
+            <input type='hidden' name='request_made_id' value='<%= request_made.id %>'>
+            <input class='buttons' type='submit' value='Show'/>
+          </form>
+          <br>
+        </p>
       <% end %>
     </section>
-    <section id='requests-received'>
+    </br>
+    <section class='requests' id='requests-received'>
       Requests I've Received <br>
       <% @requests_received.each do |request_received| %>
-        <%= request_received.space.name%></br>
-        <%= request_received.status%></br>
-        <%= Date.parse(request_received.night.to_s).strftime('%d-%b-%Y')%></br>
-        <br>
+        <p class='request'>
+          <%= request_received.space.name%></br>
+          <%= request_received.status%></br>
+          <%= Date.parse(request_received.night.to_s).strftime('%d-%b-%Y')%></br>
+          <form action='/requests/received' method='post'>
+            <input type='hidden' name='request_received_id' value='<%= request_received.id %>'>
+            <input class='buttons' type='submit' value='Show'/>
+          </form>
+          <br>
+        </p>
       <% end %>
     </section>
   </body>
