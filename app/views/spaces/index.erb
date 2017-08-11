@@ -25,7 +25,7 @@
             </label>
             <!-- Figure out how to add the form tags without messing up the layout -->
             <form action='/spaces' method='post'>
-              <input name='space_id' type='text' value='<%= space.id%>' hidden='true'>
+              <input type='hidden' name='space_id' value='<%= space.id %>'>
               <input class='buttons' type='submit' value='Book'/>
             </form>
           </p>
