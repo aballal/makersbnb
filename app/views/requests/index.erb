@@ -12,16 +12,23 @@
     <section class='page-heading'>
       <h2> Requests </h2>
     </section>
-    <section>
-      Requests Made <br>
+    <section id='requests-made'>
+      Requests I've Made <br>
       <% @requests_made.each do |request_made| %>
         <%= request_made.space.name%></br>
         <%= request_made.status%></br>
         <%= Date.parse(request_made.night.to_s).strftime('%d-%b-%Y')%></br>
+        <br>
       <% end %>
     </section>
-    <section>
-
+    <section id='requests-received'>
+      Requests I've Received <br>
+      <% @requests_received.each do |request_received| %>
+        <%= request_received.space.name%></br>
+        <%= request_received.status%></br>
+        <%= Date.parse(request_received.night.to_s).strftime('%d-%b-%Y')%></br>
+        <br>
+      <% end %>
     </section>
   </body>
 </html>
