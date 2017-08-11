@@ -8,4 +8,6 @@ class Space
   property :price_per_night, Decimal, scale: 2
   property :available_from, Date
   property :available_to, Date
+
+  belongs_to :user, required: true
 end

@@ -1,5 +1,6 @@
 require 'bcrypt'
 
+# Data mapper class corresponding to table 'users'
 class User
   include DataMapper::Resource
 
@@ -19,6 +20,11 @@ class User
   def password_confirmation=(password_confirmation)
     @password_confirmation = password_confirmation
     nil
+  end
+
+  def self.authenticate(email_address, password)
+    user = first(email_address: email_address)
+    user && BCrypt::Password.new(user.password_digest) == password ? user : nil
   end
 
   private

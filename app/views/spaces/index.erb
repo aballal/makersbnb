@@ -24,7 +24,9 @@
               Available To: <%= Date.parse(space.available_to.to_s).strftime('%d-%b-%Y') %>
             </label>
             <!-- Figure out how to add the form tags without messing up the layout -->
-            <input class='buttons' type='submit' value='Book'/>
+            <form action='/spaces' method='post'>
+              <input name='space_id' type='text' value='<%= space.id%>' hidden='true'>
+              <input class='buttons' type='submit' value='Book'/>
             </form>
           </p>
         <% end %>
