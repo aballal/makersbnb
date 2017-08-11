@@ -3,12 +3,12 @@ feature 'Booking request' do
     navigate_to_booking
   end
 
-  scenario 'I can navigate to Book a Space' do
+  scenario 'A user can navigate to Book a Space' do
     expect(page.status_code).to eq 200
     expect(page).to have_content('Book a Night')
   end
 
-  scenario 'I can select a night and request to book' do
+  scenario 'A user can select a night and request to book' do
     expect { request_to_book }.to change(Booking, :count).by(1)
     booking = Booking.last
     expect(booking.night).to eq Date.parse('30-08-2017')
@@ -18,6 +18,5 @@ feature 'Booking request' do
     expect(current_path).to eq '/requests'
     expect(page.status_code).to eq 200
     expect(page).to have_content 'Requests'
-    save_and_open_page
   end
 end
