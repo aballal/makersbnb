@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='/requests_index.css' rel='stylesheet' type='text/css'>
+    <title>Requests Received</title>
+  </head>
+  <body>
+    <section class='message'>
+      You have requests to review, confirm or deny below...
+    </section>
+    <!--interpolate space.name after "Request" in heading -->
+    <section class='page-heading'>
+      <h2> Requests for this Space </h2>
+    </section>
+    <section>
+      <center>
+      <form action='/requests' method='post'>
+        <input class='buttons' type='submit' value='Confirm Request'>
+      </form><br/>
+      <form action='/requests' method='post'>
+        <input class='buttons' type='submit' value='Deny Request'>
+      </form>
+    </center>
+    </section>
+  </body>
+</html>
