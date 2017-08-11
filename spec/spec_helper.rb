@@ -8,6 +8,7 @@ require 'simplecov-console'
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 require_relative 'helpers/booking'
 require_relative 'helpers/space'
+require_relative 'helpers/request'
 require_relative 'helpers/user'
 
 Capybara.app = MakersBnB
@@ -20,9 +21,10 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 
 RSpec.configure do |config|
-  config.include SpaceHelpers
-  config.include UserHelpers
   config.include BookingHelper
+  config.include SpaceHelpers
+  config.include RequestHelpers
+  config.include UserHelpers
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
